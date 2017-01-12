@@ -1,0 +1,87 @@
+ADOBE INDESIGN-AFDRUKINSTRUCTIES VOOR SERVICE PROVIDER
+
+NAAM PUBLICATIE: Scriptie Nieuw manus.indd
+
+PAKKETDATUM: 03-01-2017 15:29
+Aanmaakdatum: 03-01-2017
+Wijzigingsdatum: 03-01-2017
+
+CONTACTGEGEVENS
+
+Bedrijfsnaam: 
+Contactpersoon: 
+Adres: 
+
+
+
+
+
+Telefoon: 
+Fax: 
+E-mail: 
+
+SPECIALE INSTRUCTIES EN ANDERE OPMERKINGEN
+
+
+
+
+
+
+Externe plug-ins 0
+Niet-dekkende objecten: Op pagina7
+
+LETTERTYPEN
+3 gebruikte lettertypen; 0 ontbrekend, 0 ingesloten, 0 onvolledig, 0 beveiligd
+
+Lettertypen ingesloten
+- Naam: Apercu; Type: OpenType Type 1, Status: OK
+- Naam: Apercu-Italic; Type: OpenType Type 1, Status: OK
+- Naam: MinionPro-Regular; Type: OpenType Type 1, Status: OK
+
+
+KLEUREN EN INKTEN
+4 procesinkten; 0 steuninkten
+
+- Naam en type: Proceskleur Cyaan; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Magenta; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Geel; Hoek: 0,000; Lijnen/inch: 0,000
+- Naam en type: Proceskleur Zwart; Hoek: 0,000; Lijnen/inch: 0,000
+
+
+KOPPELINGEN EN AFBEELDINGEN
+(Alleen ontbrekende en ingesloten koppelingen)
+Koppelingen en afbeeldingen: 4 gevonden koppelingen; 0 gewijzigd, 0 ontbrekend 0 Niet toegankelijk
+Afbeeldingen: 0 ingesloten, 4 gebruiken RGB-kleurruimte
+
+
+AFDRUKINSTELLINGEN
+PPD: n.v.t., (HP Officejet K7100)
+Afdrukken naar: Printer
+Aantal exemplaren: 1
+Lezer spreads: Nee
+Even/oneven pagina's: Beide
+Pagina's: Alles
+Proef: Nee
+Naast elkaar: Geen
+Schalen: 100%, 100%
+Paginapositie: Linksboven
+Lagen afdrukken: Zichtbare & afdrukbare lagen
+Drukkersmarkeringen: Geen
+Afloopgebied: 0 mm, 0 mm, 0 mm, 0 mm
+Kleur: Samengesteld RGB
+Overvulmodus: Geen
+Afbeeldingsgegevens verzenden: Geoptimaliseerde subsampling
+Vervanging OPI/DCS-afbeelding: Nee
+Paginaformaat: A4
+Papierafmetingen: 297 mm x 420 mm
+Stand: Staand
+Negatief: Nee
+Spiegelmodus: Uit
+
+
+BESTANDSPAKKETLIJST
+
+1. Scriptie Nieuw manus.indd; type: Adobe InDesign-publicatie; grootte: 2872K
+2. Apercu.otf; type: Lettertypebestand; grootte: 73K
+3. Apercu-Italic.otf; type: Lettertypebestand; grootte: 78K
+4. MinionPro-Regular.otf; type: Lettertypebestand; grootte: 213K

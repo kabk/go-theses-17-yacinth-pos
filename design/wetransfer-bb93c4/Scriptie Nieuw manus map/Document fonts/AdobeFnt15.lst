@@ -1,0 +1,73 @@
+%!Adobe-FontList 1.15
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Apercu-Italic
+FamilyName:Apercu
+StyleName:Italic
+MenuName:Apercu
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Apercu Italic
+WritingScript:Roman
+OutlineFileName:\Apercu-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:80880
+FileModTime:1282934090
+NameArray:0,Mac,4,Apercu Italic
+NameArray:0,Win,1,Apercu
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Apercu
+FamilyName:Apercu
+StyleName:Regular
+MenuName:Apercu
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Apercu
+WritingScript:Roman
+OutlineFileName:\Apercu.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:75492
+FileModTime:1282908970
+NameArray:0,Mac,4,Apercu
+NameArray:0,Win,1,Apercu
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1458210838
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+

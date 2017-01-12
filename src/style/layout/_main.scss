@@ -1,0 +1,185 @@
+* {
+	@include hide-scroll;
+	box-sizing: border-box !important;
+	margin: 0;
+	padding: 0; 
+}
+
+body {
+	background-color: $grey;
+	background: url('img/grid2.png');
+  	background-size: $grid * 48 $grid;
+  	background-repeat: repeat-y;
+  	padding: $grid 0 0 $grid;
+  	// 46 blokjes
+}
+
+div {
+	position: relative;
+	display: block;
+	background: $background-color;
+	clear: none;
+}
+
+#header {
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $grid * 2;
+	background: transparent; 
+}
+
+#index {
+	position: fixed;
+	z-index: 10;
+	margin: 0 0 0 $grid; 
+	width: 4 * $grid;
+	height: 2 * $grid;
+	text-transform: uppercase;
+	border: $red-border;
+	p {
+		display: block;
+		text-align: center;
+		vertical-align: center;
+		line-height: 2 * $grid;
+	}
+}
+
+#content {
+	margin: $grid 0 $grid $grid; 
+	padding: 18px;
+	display: inline-block;
+	float: left;
+	width: 12 * $grid;
+	height: 19 * $grid;
+	text-transform: uppercase;
+	border: $red-border;
+	ul li {
+		margin-bottom: $line-height;
+		&:last-child {
+			margin: 0 !important;
+		}
+	}
+}
+
+#title {
+	margin: $grid $grid $grid $grid * 3;
+	padding: $grid * 2.5 $grid 0 $grid;
+	display: inline-block;
+	float: right;
+	text-align: center;
+	width: 30 * $grid;
+	height: 19 * $grid;
+	h1 {
+		font-size: $font-size-large;
+		line-height: $line-height-large;
+		letter-spacing: -1px;
+	}
+	p {
+		margin-top: $grid * 1.8;
+	}
+}
+
+#abstract, #introductie, #ch-1, #ch-2-0, #ch-2-1, #ch-2-2, #ch-2-3, #ch-2-4, #ch-2-5, #ch-3, #conclusie, #bronnen {
+	display: inline-block;
+	float: right;
+	width: $grid * 31;
+	margin: $grid $grid 0 0 ;
+	padding: 0 20px 0 20px;
+}
+
+#abstract {
+	height: $grid * 32;
+	p {
+		word-wrap: break-word !important;
+	} 
+}
+
+#introductie {
+	height: $grid * 12;
+}
+
+#misleidingen {
+	display: inline-block;
+	width: $grid * 13;
+	height: $grid * 2;
+	background: transparent;
+	.block {
+		position: absolute; 
+		width: $grid * 13;
+		padding: 20px; 
+		&#b-1 { 
+			top: $grid * 1;
+			padding: 0 !important;
+		}
+		&#b-2 {
+			top: $grid * 15;
+		}
+		&#b-3 {
+			top: $grid * 19;
+		}
+		&#b-4 {
+			top: $grid * 20;
+		}
+		&#b-5 {
+			top: $grid * 40;
+		}
+		&#b-6 {
+			top: $grid * 60;
+		}
+		&#b-7 {
+			top: $grid * 80;
+		}
+		&#b-8 {
+			top: $grid * 100;
+		}
+		&#b-9 {
+			top: $grid * 120;
+		}
+		&#b-10 {
+			top: $grid * 140;
+		}
+		&#b-11 {
+			top: $grid * 160;
+		}
+		&#b-12 {
+			top: $grid * 180;
+		}
+		&#b-13 {
+			top: $grid * 200;
+		}
+	}
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	line-height: 2 * $grid;
+	text-transform: uppercase;
+}
+
+#right {
+	position: absolute;
+	display: inline-block;
+	margin: 0 $grid 0 0;
+	background: none;
+	width: $grid * 34;
+	height: $grid * 900;
+	top: $grid * 24;
+	left: $grid * 15;
+	border: $red-border;
+}
+
+#left {
+	position: absolute;
+	display: inline-block;
+	margin: 0 $grid 0 0;
+	background: none;
+	width: $grid * 18;
+	height: $grid * 900;
+	top: $grid * 24;
+	left: $grid * -1;
+	border-top: $red-border;
+	border-bottom: $red-border;
+}

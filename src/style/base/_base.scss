@@ -1,7 +1,7 @@
 * {
   &::selection {
-    background: $main-color;
-    color: $background-color;
+    background: transparent;
+    color: $red;
   }
 }
 
@@ -27,6 +27,26 @@ a {
   }
 }
 
-p {
-  font-family: $display-stack;
+p, ul, li, h1, blockquote {
+  font-family: $sans-serif-stack;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    line-height: 7px;
+}
+
+blockquote {
+  margin-left: $grid;
+  width: $grid * 22;
+}
+
+.indent {
+  display: inline-block;
+  width: $grid;
 }
