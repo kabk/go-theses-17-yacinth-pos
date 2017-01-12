@@ -8,10 +8,9 @@
 body {
 	background-color: $grey;
 	background: url('img/grid2.png');
+	background-position: center top;
   	background-size: $grid * 48 $grid;
-  	background-repeat: repeat-y;
-  	padding: $grid 0 0 $grid;
-  	// 46 blokjes
+  	background-repeat: repeat;
 }
 
 div {
@@ -19,6 +18,17 @@ div {
 	display: block;
 	background: $background-color;
 	clear: none;
+}
+
+#all {
+	@include center-horizontal;
+	width: 1440px;
+	height: $grid * 1000;
+	background-color: $grey;
+	background: url('img/grid2.png');
+  	background-size: $grid * 48 $grid;
+  	background-repeat: repeat-y;
+  	padding: $grid 0 0 $grid;
 }
 
 #header {
@@ -117,37 +127,34 @@ div {
 			top: $grid * 15;
 		}
 		&#b-3 {
-			top: $grid * 19;
+			top: $grid * 25;
 		}
 		&#b-4 {
-			top: $grid * 20;
+			top: $grid * 45;
 		}
 		&#b-5 {
-			top: $grid * 40;
+			top: $grid * 65;
 		}
 		&#b-6 {
-			top: $grid * 60;
+			top: $grid * 85;
 		}
 		&#b-7 {
-			top: $grid * 80;
+			top: $grid * 105;
 		}
 		&#b-8 {
-			top: $grid * 100;
+			top: $grid * 125;
 		}
 		&#b-9 {
-			top: $grid * 120;
+			top: $grid * 145;
 		}
 		&#b-10 {
-			top: $grid * 140;
+			top: $grid * 165;
 		}
 		&#b-11 {
-			top: $grid * 160;
+			top: $grid * 185;
 		}
 		&#b-12 {
-			top: $grid * 180;
-		}
-		&#b-13 {
-			top: $grid * 200;
+			top: $grid * 205;
 		}
 	}
 }
@@ -164,11 +171,14 @@ div {
 	display: inline-block;
 	margin: 0 $grid 0 0;
 	background: none;
-	width: $grid * 34;
+	width: $grid * 33;
 	height: $grid * 900;
 	top: $grid * 24;
 	left: $grid * 15;
-	border: $red-border;
+	border-left: $red-border;
+	border-top: $red-border;
+	border-right: none;
+	border-bottom: none;
 }
 
 #left {

@@ -41,6 +41,10 @@ sup {
     line-height: 7px;
 }
 
+.underline {
+  border-bottom: $red-border;
+}
+
 blockquote {
   margin-left: $grid;
   width: $grid * 22;

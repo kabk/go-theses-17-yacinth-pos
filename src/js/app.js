@@ -26,13 +26,15 @@
 
 
     $('#index').on('click', function(){
-      $('html, body').animate({
-        scrollTop: $(window).offset().top
+    	console.log('index');
+      $('body').animate({
+        'scrollTop' : 0
       }, 800);
     });
 
 	$(window).on('scroll', function(){
 	    $('.block').each(function(){
+	    	console.log(this);
 	    	var isVisible = isElementInViewport(this);
 	    	if(isVisible){
 	    		console.log(isVisible);
