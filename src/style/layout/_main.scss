@@ -7,8 +7,8 @@
 
 body {
 	background-color: $grey;
-	background: url('img/grid2.png');
-	background-position: center top;
+	background: url('img/grid4.png');
+	background-position: top left;
   	background-size: $grid * 48 $grid;
   	background-repeat: repeat;
 }
@@ -23,9 +23,9 @@ div {
 #all {
 	@include center-horizontal;
 	width: 1440px;
-	height: $grid * 1000;
+	height: auto;
 	background-color: $grey;
-	background: url('img/grid2.png');
+	background: url('img/grid4.png');
   	background-size: $grid * 48 $grid;
   	background-repeat: repeat-y;
   	padding: $grid 0 0 $grid;
@@ -43,7 +43,7 @@ div {
 #index {
 	position: fixed;
 	z-index: 10;
-	margin: 0 0 0 $grid; 
+	margin: $grid 0 0 $grid * 2; 
 	width: 4 * $grid;
 	height: 2 * $grid;
 	text-transform: uppercase;
@@ -96,18 +96,11 @@ div {
 	float: right;
 	width: $grid * 31;
 	margin: $grid $grid 0 0 ;
-	padding: 0 20px 0 20px;
+	padding: 0 20px $grid 20px;
 }
 
-#abstract {
-	height: $grid * 32;
-	p {
-		word-wrap: break-word !important;
-	} 
-}
-
-#introductie {
-	height: $grid * 12;
+#conclusie {
+	margin-bottom: $grid * 4;
 }
 
 #misleidingen {
@@ -172,7 +165,7 @@ div {
 	margin: 0 $grid 0 0;
 	background: none;
 	width: $grid * 33;
-	height: $grid * 900;
+	// height: $grid * 900;
 	top: $grid * 24;
 	left: $grid * 15;
 	border-left: $red-border;
@@ -184,12 +177,11 @@ div {
 #left {
 	position: absolute;
 	display: inline-block;
-	margin: 0 $grid 0 0;
+	margin: 0 0 0 $grid * -100 ;
 	background: none;
-	width: $grid * 18;
-	height: $grid * 900;
+	width: $grid * 300;
+	// height: $grid * 900;
 	top: $grid * 24;
 	left: $grid * -1;
 	border-top: $red-border;
-	border-bottom: $red-border;
 }

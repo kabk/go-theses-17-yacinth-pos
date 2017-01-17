@@ -1,0 +1,45 @@
+.footnote {
+  position: absolute;
+  display: block;
+  border: $red-border;
+  width: auto;
+  max-width: $grid * 24;
+  height: auto;
+  left: -10000px;
+
+  // to cancel out the border
+  margin: -10px 10px 0 -10px; 
+  padding: 10px 10px 0 7px; 
+
+  sup {
+    display: inline-block;
+    position: absolute;
+    &.groter {
+      line-height: 10px;
+    }
+  }
+  p {
+    display: inline-block;
+    font-size: $font-size;
+    line-height: $line-height;
+    width: 100%;
+    margin: 0; 
+    padding: 10px 5%;
+  }
+  img {
+    max-width: 600px;
+    height: auto;
+    padding: 14px 20px 20px 40px; 
+  }
+
+  &.right-align {
+    margin: -10px 0 0 0; 
+    padding: 10px 0 0 0; 
+    sup {
+      right: 7px;
+    }
+    img {
+      padding: 14px 40px 20px 20px;    
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "BaskervilleMTStd-Bold";
+    src: url("BaskervilleMTStd-Bold.eot");
+    src: url("BaskervilleMTStd-Bold.eot?#iefix") format("embedded-opentype"),
+         url("BaskervilleMTStd-Bold.woff2") format("woff2"),
+         url("BaskervilleMTStd-Bold.woff") format("woff"),
+         url("BaskervilleMTStd-Bold.ttf") format("ttf"),
+         url("BaskervilleMTStd-Bold.svg#BaskervilleMTStd-Bold") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}

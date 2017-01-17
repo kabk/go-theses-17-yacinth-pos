@@ -2,14 +2,26 @@
 // Typography
 //
 
+$font-size-small: 12px;
+$line-height-small: 12px;
+
 $font-size: 17px;
 $line-height: 19px;
 
-$font-size-large: 68px;
-$line-height-large: 68px;
+$font-size-baskerville-bigger: 30px;
+$line-height-baskerville-bigger: 33px;
+
+$font-size-bigger: 28px;
+$line-height-bigger: 32px;
+
+$font-size-large: 200px;
+$line-height-large: 160px;
 
 $system-stack: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$serif-stack: 'times new roman', times, georgia, serif;
+$serif-stack: 'BaskervilleMTStd-Regular', times, georgia, serif !important;
+$serif-stack-italic: 'BaskervilleMTStd-Italic', times, georgia, serif !important;
+$serif-stack-bold: 'BaskervilleMTStd-Bold', times, georgia, serif !important;
+$serif-stack-bold-italic: 'BaskervilleMTStd-BoldIt', times, georgia, serif !important;
 $sans-serif-stack: 'Apercu';
 $display-stack: "Comic Sans", "Comic Sans MS";
 
