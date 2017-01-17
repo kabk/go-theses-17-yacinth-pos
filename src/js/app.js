@@ -31,36 +31,51 @@
 	      );
 	  }
 
-	  function change (id) {
+  	function change (id) {
 
-  		// elements to be excluded from styling
+		// elements to be excluded from styling
 		var exceptions = '#title > p, .block > p, p.header, .block p > sup';
 		var footnoteExceptions = '#f-I > *, #f-II > *, #f-III > *, #f-IV > *, #f-V > *'
 
 		// elements to be included
 		var inclusions = '.footnote > sup, .footnote > p';
 
-		console.log('adding classes ' +id+ '');
+		if (id === 'groter' || id === 'baskerville' || id === 'kleuren' || id === 'dikgedrukt' ) {
+		
+			console.log('adding classes ' +id+ '');
 
-		$('.trigger-change#' +id+ '').parents('div').find('p, blockquote, sup').not(exceptions).each(function(){
-			$(this).addClass(id);	
-		});
+			$('.trigger-change#' +id+ '').parents('div').find('p, blockquote, sup').not(exceptions).each(function(){
+				$(this).addClass(id);	
+			});
 
-		$(inclusions).not(footnoteExceptions).each(function(){
-			$(this).addClass(id);		
-		})
+			$(inclusions).not(footnoteExceptions).each(function(){
+				$(this).addClass(id);		
+			})
 
-		if( id === 'herhaling' ) {
+			moveLeft();
+
+			roundOff(paragraphs);
+		}
+
+		else if( id === 'herhaling' ) {
+
+			console.log('adding elements ' +id+ '');
+
 			$('.herhaling-quote').show().css( "display", "block" );
+
+			roundOff(paragraphs);
 		}
 
-		if( id === 'afbeeldingen' ) {
+		else if( id === 'afbeeldingen' ) {
+
+			console.log('adding elements ' +id+ '');
+
 			$('.afbeeldingen-image').show().css( "display", "block" );
-		}
 
-    	roundOff(paragraphs);
-    	
-    	return "";
+			roundOff(paragraphs);
+		}
+		
+		return "";
 	  }
 
 	  function footNote (el) {
@@ -83,7 +98,7 @@
 	  function roundOff(el) {
 
 	  	el.each(function(){
-    		
+			
 		  	$(this).removeAttr('style');
 
 		  	var toAdd = 30 - $(this).outerHeight() % 30 ;
@@ -95,6 +110,19 @@
 			}); 
 
 		});
+	  }
+
+	  function moveLeft () {
+	  	
+	  	console.log('werk links bij ' + $('#herhaling-hook').offset().top, $('#afbeeldingen-hook').offset().top);
+
+	  	$('#b-10').css({
+	  		'top' : $('#herhaling-hook').offset().top
+	  	});
+
+	  	$('#b-12').css({
+	  		'top' : $('#afbeeldingen-hook').offset().top
+	  	});
 	  }
 
     $(function () {
@@ -119,8 +147,6 @@
 	    });
 
 		$(window).on('scroll', function(){
-
-			console.log(groter);
 
 		    $('.trigger').each(function(){
 
