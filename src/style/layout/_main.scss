@@ -27,7 +27,9 @@ div {
 	background-color: $grey;
 	background: url('img/grid4.png');
   	background-size: $grid * 48 $grid;
+  	background-position: left top;
   	background-repeat: repeat-y;
+  	margin: 0;
   	padding: $grid 0 0 $grid;
 }
 
@@ -48,12 +50,55 @@ div {
 	height: 2 * $grid;
 	text-transform: uppercase;
 	border: $red-border;
+	cursor: pointer;
+	&:hover {
+		color: white;
+		background: red;
+		border: 3px solid white; 
+	}
 	p {
 		display: block;
 		text-align: center;
 		vertical-align: center;
 		line-height: 2 * $grid;
+		cursor: pointer;
 	}
+}
+
+#print {
+	position: absolute;
+	top: $grid;
+	right: $grid;
+	line-height: $grid * 2;
+	text-align: center;
+	border: $red-border;
+	width: $grid * 4;
+	height: $grid * 2; 
+	&:hover {
+		p,a {
+			color: white;	
+		}
+		background: red;
+		border: 3px solid white; 
+	}
+}
+
+#showcase {
+	position: fixed;
+	top: $grid;
+	right: $grid * 6;
+	line-height: $grid * 2;
+	text-align: center;
+	border: $red-border;
+	width: $grid * 4;
+	height: $grid * 2; 
+	&:hover {
+		p,a {
+			color: white;	
+		}
+		background: red;
+		border: 3px solid white; 
+	}	
 }
 
 #content {
@@ -82,16 +127,28 @@ div {
 	width: 30 * $grid;
 	height: 19 * $grid;
 	h1 {
-		font-size: $font-size-large;
-		line-height: $line-height-large;
+		font-family: $serif-stack-bold;
+		font-size: 180px;
+		line-height: 130px;
 		letter-spacing: -1px;
+		text-align: right;
+		margin: $grid $grid * 3 $grid 0 ;
+		color: red;
+	}
+	h2 {
+		font-family: $sans-serif-stack;
+		font-size: 30px;
+		line-height: 35px;
+		width: 80%;
+		@include center-horizontal;
+
 	}
 	p {
 		margin-top: $grid * 1.8;
 	}
 }
 
-#abstract, #introductie, #ch-1, #ch-2-0, #ch-2-1, #ch-2-2, #ch-2-3, #ch-2-4, #ch-2-5, #ch-3, #conclusie, #bronnen {
+#abstract, #introductie, #ch-1, #ch-2-0, #ch-2-1, #ch-2-2, #ch-2-3, #ch-2-4, #ch-2-5, #ch-3, #conclusie, #bronnen, #sources, #shoutout {
 	display: inline-block;
 	float: right;
 	width: $grid * 31;
@@ -100,7 +157,23 @@ div {
 }
 
 #conclusie {
-	margin-bottom: $grid * 4;
+	// margin-bottom: $grid * 4;
+}
+
+#sources {
+	ul {
+		li {
+			margin: $grid 0 0 0;
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+#shoutout {
+	text-align: center;
+	padding: 20px; 
 }
 
 #misleidingen {
@@ -117,37 +190,37 @@ div {
 			padding: 0 !important;
 		}
 		&#b-2 {
-			top: $grid * 15;
+			top: $grid * 10;
 		}
 		&#b-3 {
-			top: $grid * 25;
+			top: $grid * 90;	
 		}
 		&#b-4 {
-			top: $grid * 45;
+			top: $grid * 110;	
 		}
 		&#b-5 {
-			top: $grid * 65;
+			top: $grid * 140;	
 		}
 		&#b-6 {
-			top: $grid * 85;
+			top: $grid * 220;	
 		}
 		&#b-7 {
-			top: $grid * 105;
+			top: $grid * 260;	
 		}
 		&#b-8 {
-			top: $grid * 125;
+			top: $grid * 300;	
 		}
 		&#b-9 {
-			top: $grid * 145;
-		}
-		&#b-10 {
-			top: $grid * 165;
-		}
-		&#b-11 {
-			top: $grid * 185;
+			top: $grid * 330;	
 		}
 		&#b-12 {
-			top: $grid * 205;
+			top: $grid * 461;
+		}
+		&#b-10 {
+			top: $grid * 690;	
+		}
+		&#b-11 {
+			top: $grid * 720;	
 		}
 	}
 }
@@ -165,9 +238,10 @@ div {
 	margin: 0 $grid 0 0;
 	background: none;
 	width: $grid * 33;
-	// height: $grid * 900;
 	top: $grid * 24;
 	left: $grid * 15;
+	z-index: -10;
+	height: 100%;
 	border-left: $red-border;
 	border-top: $red-border;
 	border-right: none;

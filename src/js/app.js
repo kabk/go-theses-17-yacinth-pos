@@ -12,7 +12,7 @@
 			herhaling = true,
 			afbeeldingen = true;
 
-	var paragraphs = $(' #abstract, #introductie, #ch-1, #ch-2-0, #ch-2-1, #ch-2-2, #ch-2-3, #ch-2-4, #ch-2-5, #ch-2-6, #ch-3, #conclusie, #bronnen');
+	var 	paragraphs = $(' #abstract, #introductie, #ch-1, #ch-2-0, #ch-2-1, #ch-2-2, #ch-2-3, #ch-2-4, #ch-2-5, #ch-2-6, #ch-3, #conclusie, #bronnen');
 
 	function isElementInViewport (el) {
 
@@ -29,12 +29,12 @@
 	          rect.bottom <= $(window).height() * 0.66 && /* (window.innerHeight || document.documentElement.clientHeight) for full screen */ 
 	          rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
 	      );
-	  }
+	}
 
   	function change (id) {
 
 		// elements to be excluded from styling
-		var exceptions = '#title > p, .block > p, p.header, .block p > sup';
+		var exceptions = '#title > p, .block > p, p.header, .block p > sup, #shoutout > p, #print > p, #print > a';
 		var footnoteExceptions = '#f-I > *, #f-II > *, #f-III > *, #f-IV > *, #f-V > *'
 
 		// elements to be included
@@ -50,101 +50,63 @@
 
 			$(inclusions).not(footnoteExceptions).each(function(){
 				$(this).addClass(id);		
-			})
-
-			moveLeft();
-
-			roundOff(paragraphs);
-		}
-
-		else if( id === 'herhaling' ) {
+			});
+		} else if( id === 'herhaling' ) {
 
 			console.log('adding elements ' +id+ '');
-
 			$('.herhaling-quote').show().css( "display", "block" );
-
-			roundOff(paragraphs);
-		}
-
-		else if( id === 'afbeeldingen' ) {
+		} else if( id === 'afbeeldingen' ) {
 
 			console.log('adding elements ' +id+ '');
-
 			$('.afbeeldingen-image').show().css( "display", "block" );
-
-			roundOff(paragraphs);
 		}
-		
 		return "";
 	  }
 
 	  function footNote (el) {
-	    	var value = el.text();
-	    	console.log(value);
+    	var value = el.text();
+    	console.log(value);
 
-	    	if( el.offset().left < $(window).width() * 0.66 ) {
-		    	$('#f-' +value+ '').show().css({
-		    		"top" : el.offset().top,
-		    		"left" : el.offset().left
-		    	});
-	    	} else {
-		    	$('#f-' +value+ '').show().addClass('right-align').css({
-		    		"top" : el.offset().top,
-		    		"left" : el.offset().left - $('#f-' +value+ '').outerWidth() + 7 + 13
-		    	});	    		
-	    	}
-	  }
-
-	  function roundOff(el) {
-
-	  	el.each(function(){
-			
-		  	$(this).removeAttr('style');
-
-		  	var toAdd = 30 - $(this).outerHeight() % 30 ;
-			
-		  	// console.log($(this).outerHeight(), $(this).height(), toAdd );
-
-			$(this).css({
-				'height' : $(this).outerHeight() + toAdd
-			}); 
-
-		});
-	  }
-
-	  function moveLeft () {
-	  	
-	  	console.log('werk links bij ' + $('#herhaling-hook').offset().top, $('#afbeeldingen-hook').offset().top);
-
-	  	$('#b-10').css({
-	  		'top' : $('#herhaling-hook').offset().top
-	  	});
-
-	  	$('#b-12').css({
-	  		'top' : $('#afbeeldingen-hook').offset().top
-	  	});
+    	if( el.offset().left < $(window).width() * 0.66 ) {
+	    	$('#f-' +value+ '').show().css({
+	    		"top" : el.offset().top,
+	    		"left" : el.offset().left
+	    	});
+    	} else {
+	    	$('#f-' +value+ '').show().addClass('right-align').css({
+	    		"top" : el.offset().top,
+	    		"left" : el.offset().left - $('#f-' +value+ '').outerWidth() + 7 + 13
+	    	});	    		
+    	}
 	  }
 
     $(function () {
 
 	    $('#index').on('click', function(){
-	    	console.log('index');
+
 	      $('body').animate({
+	        
 	        'scrollTop' : 0
+
 	      }, 3000);
 	    });
 
-	    $('sup').not('.footnote > sup').on('click', function(){
+	    $('#showcase').on('click', function(){
+
+	      $('body').animate({
+	        
+	        'scrollTop' : 45000
+
+	      }, 180000, "linear");
+	    });
+
+		$('p > sup').on('click', function(){
 	    	footNote($(this));
 	    });
 
 	    $('.footnote').on('click', function(){
 	    	$(this).hide();
 	    })
-
-	    $(window).on('load resize', function(){
-			roundOff(paragraphs);
-	    });
 
 		$(window).on('scroll', function(){
 
@@ -205,7 +167,6 @@
 		    			default:
 		    			console.log('no classes found');
 		    		}
-		    		
 		    	}
 		    });
 		});
