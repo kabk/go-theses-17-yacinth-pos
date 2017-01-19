@@ -119,26 +119,27 @@ div {
 }
 
 #title {
-	margin: $grid $grid $grid $grid * 3;
+	margin: $grid $grid $grid $grid * 2;
 	padding: $grid * 2.5 $grid 0 $grid;
 	display: inline-block;
 	float: right;
 	text-align: center;
-	width: 30 * $grid;
+	width: 31 * $grid;
 	height: 19 * $grid;
 	h1 {
-		font-family: $serif-stack-bold;
-		font-size: 180px;
-		line-height: 130px;
+		font-family: $sans-serif-stack;
+		font-size: 68px;
+		line-height: 68px;
 		letter-spacing: -1px;
-		text-align: right;
-		margin: $grid $grid * 3 $grid 0 ;
-		color: red;
+		text-align: center;
+		margin: 0 $grid $grid $grid ;
+		color: black;
 	}
 	h2 {
+		margin: $grid / 2 0 0 0 ;
 		font-family: $sans-serif-stack;
-		font-size: 30px;
-		line-height: 35px;
+		font-size: $font-size;
+		line-height: $font-size;
 		width: 80%;
 		@include center-horizontal;
 
